@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner Image Sample</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+
+</head>
+<body>
+
+	<div id="banner-title">
+		<div id="toggle-button"> 
+			<button id="button-icon" class="chevron-down"></button>
+		</div>
+	</div>
+
+<div id="myBanner" style="display: block;" class="banner">
+	<div id="banner-text" >
+
+		<div id="left">
+			Join 100,000 eLearning Professionals
+		</div>
+
+		<div id="right">
+			100 New Blogs created this month
+		</div>
+
+		<div id="button">
+			<button class="button">JOIN THE COMMUNITY</button>
+		</div>
+	</div>
+</div>
+<script>
+	$( "#toggle-button" ).click(function() {
+		  $( "#myBanner" ).fadeToggle( "slow", function(){
+		  		if( $("#button-icon").is(".chevron-down"))
+					$("#button-icon").removeClass("chevron-down").addClass("chevron-up");
+				else
+					$("#button-icon").removeClass("chevron-up").addClass("chevron-down");
+
+														    });
+		  		});
+
+</script>
+		
+</body>
+</html>
